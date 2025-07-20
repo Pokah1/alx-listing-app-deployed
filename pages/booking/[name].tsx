@@ -2,6 +2,7 @@ import { useRouter } from "next/router";
 import BookingForm from "@/components/booking/BookingForm";
 import OrderSummary from "@/components/booking/OrderSummary";
 import { PROPERTYLISTINGSAMPLE } from "@/constants";
+import Link from "next/link";
 
 export default function BookingPage() {
   const router = useRouter();
@@ -27,6 +28,14 @@ export default function BookingPage() {
       <div className="grid grid-cols-2 gap-6">
         <BookingForm />
         <OrderSummary bookingDetails={bookingDetails} />
+        {/* I want to return home , like a button */}
+        <div className="col-span-2">
+          <Link href={`/`}>
+            <button className="mt-4 bg-[#34967C] text-white px-6 py-2 rounded-md hover:bg-[#2c7a5a] transition">
+                Return Home
+            </button>
+            </Link>
+        </div>
       </div>
     </div>
   );

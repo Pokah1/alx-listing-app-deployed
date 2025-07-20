@@ -73,7 +73,12 @@ const PropertyDetail: React.FC<{ property: PropertyProps }> = ({ property }) => 
             </button>
             </Link>
             
-            </div>
+                        </div>
+                        <Link href={`/`}>
+            <button className="mt-4 bg-[#34967C] text-white px-6 py-2 rounded-md hover:bg-[#2c7a5a] transition">
+                Return Home
+            </button>
+            </Link>
     </div>
   );
 };
