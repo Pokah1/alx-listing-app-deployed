@@ -40,3 +40,20 @@ export interface PillProps {
   isActive?: boolean;
   onClick: () => void
 }
+
+export interface BookingDetails {
+  propertyName: string;
+  price: number;
+  bookingFee: number;
+  totalNights: number;
+  startDate: string;
+  image: string;
+}
+export interface BookingDetails {
+  propertyName: string;
+  price: number;
+  bookingFee: number;
+  totalNights: number;
+  startDate: string;
+  image: string;
+}

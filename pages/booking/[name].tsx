@@ -21,6 +21,7 @@ export default function BookingPage() {
     bookingFee: 65,
     totalNights: 3,
     startDate: "24 August 2024",
+    image: property.image,
   };
 
   return (
